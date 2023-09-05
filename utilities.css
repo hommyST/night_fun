@@ -1,0 +1,51 @@
+.text-center {
+  text-align: center;
+}
+
+/* COMPONENTS */
+.badge {
+  padding: 0.2em 0.6em;
+  border-radius: 0.5rem;
+  background-color: #4527a0;
+}
+
+/* COLOR */
+.bg-info {
+  background-color: #6596ec;
+}
+.bg-blue {
+  background-color: #2196f3;
+}
+.bg-green {
+  background-color: #4caf50;
+}
+.bg-red {
+  background-color: #f44336;
+}
+.bg-orange {
+  background-color: #ff5722;
+}
+
+.text-info {
+  color: #6596ec;
+}
+.text-blue {
+  color: #2196f3;
+}
+.text-green {
+  color: #4caf50;
+}
+.text-red {
+  color: #f44336;
+}
+.text-orange {
+  color: #ff5722;
+}
+
+/* MARGIN PADDING */
+.mb-0 {margin-bottom: 0;}
+.mb-1 {margin-bottom: calc(1 * 5px);}
+.mb-2 {margin-bottom: calc(2 * 5px);}
+.mb-3 {margin-bottom: calc(3 * 5px);}
+.mb-4 {margin-bottom: calc(4 * 5px);}
+.mb-5 {margin-bottom: calc(5 * 5px);}

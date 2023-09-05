@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  color-scheme: dark;
+  font-family: 'Courier New', Courier, monospace;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  background-color: #212121;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+}
+main {
+  max-width: 1000px;
+  margin-inline: auto;
+  padding: 1rem;
+  background-color: #263238;
+}
+
+
+/* COMPONENTS */
+img {
+  display: block;
+  max-width: 100%;
+  height: 150px;
+}
+button {
+	border: none;
+	padding: 0.5rem 1rem;
+	margin: 0;
+	border-radius: 0.5em;
+	background-color: #263238;
+  cursor: pointer;
+  transition: filter 100ms ease-in;
+}
+button:hover,
+button:focus-visible {
+  filter: brightness(0.8);
+}
+button:active {
+  filter: brightness(0.55);
+}
+
+/* form-group */
+.form-group {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.5rem;
+}
+.form-group output {
+  padding: 0.5rem;
+  background-color: #004d40;
+  color: #e0f2f1;
+  font-weight: 700;
+}
+input[type="range"]::-moz-range-progress {
+  background-color: #43e5f7; 
+}
+input[type="range"]::-moz-range-track {  
+  background-color: #9a905d;
+}
+
+/* control */
+.control {
+  --bc-control: hsla(9, 28%, 19%, 0.5);
+  --control-width: 240px;
+  --close-btn-size: 40px;
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100dvh;
+  width: var(--control-width);
+  padding: 1rem;
+  background-color: var(--bc-control);
+  backdrop-filter: blur(2px);
+  transition: left 400ms ease-in-out;
+}
+.control[data-open="false"] {
+  left: calc(var(--control-width) * -1);
+}
+.control .close {
+  position: absolute;
+  right: calc(var(--close-btn-size) * -1);
+  top: 1rem;
+  width: var(--close-btn-size);
+  aspect-ratio: 1;
+  background-color: var(--bc-control);
+
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 0 0.7rem 0.7rem 0;
+  outline: none;
+  padding: 0.3rem;
+  font-size: 1.4rem;
+}
+.control .close i {
+  transition: rotate 1s ease-in-out;
+}
+.control .close:hover i,
+.control .close:focus-visible i {
+  rotate: 1turn;
+}
+
+
+
+/* CANVAS */
+#game {
+  /* width: 100dvw;
+  height: 100dvh; */
+  background-color: #263238;
+}
