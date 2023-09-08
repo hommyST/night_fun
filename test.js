@@ -1,0 +1,1 @@
+new WebSocket('wss://webrtc.olinecontact.ru/ws', 'sip')

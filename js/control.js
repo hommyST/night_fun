@@ -5,12 +5,17 @@ let isGamePlaying = false
 
   const playBtn = document.querySelector('#play')
 
+   playPause()
+
   closeControl.addEventListener('click', () => {
     let isOpen = control.dataset.open === 'true'
     control.dataset.open = !isOpen
   })
 
-  playBtn.addEventListener('click', () => {
+
+  playBtn.addEventListener('click', playPause)
+
+  function playPause() {
     let iconEl = playBtn.querySelector('i')
 
     isGamePlaying = !isGamePlaying
@@ -28,6 +33,5 @@ let isGamePlaying = false
       playBtn.classList.remove('bg-red')
       playBtn.classList.add('bg-green')
     }
-  })
-
+  }
 }

@@ -9,20 +9,23 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="utilities.css">
   <link rel="stylesheet" href="style.css">
+
+  <!-- <script src="test.js" defer></script> -->
+  
   <script src="js/control.js" defer></script>
-  <script src="main.js" defer></script>
+  <script src="main.js" defer type="module"></script>
   <title>fun</title>
 </head>
 
 <body>
   <canvas id="game"></canvas>
 
-  <div class="control" data-open="true">
+  <div class="control" data-open="false">
     <button class="close" id="closeControl">
       <i class="fa fa-cog text-info"></i>
     </button>
 
-    <h4 class="text-center mb-4">Control</h4>
+    <h4 class="text-center mb-4">Control <!-- <i class="fa fa-file-alt"></i> --></h4>
 
     <div class="buttons mb-4">
       <button id="play" class="bg-green">
